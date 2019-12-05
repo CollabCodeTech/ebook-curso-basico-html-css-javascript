@@ -8,6 +8,7 @@
   border-radius: var(--gap-smaller);
   border: 2px solid var(--color-primary);
   text-align: center;
+  transition: all 150ms linear;
 }
 
 .primary-button:hover {

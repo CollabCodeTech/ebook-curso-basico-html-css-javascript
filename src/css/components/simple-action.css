@@ -2,6 +2,7 @@
   color: var(--color-second);
   font-weight: bold;
   font-size: 2em;
+  transition: color 150ms linear;
 }
 
 .simple-action:hover {
