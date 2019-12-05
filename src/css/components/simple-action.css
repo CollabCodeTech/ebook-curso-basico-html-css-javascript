@@ -1,0 +1,19 @@
+.simple-action {
+  color: var(--color-second);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.simple-action:hover {
+  color: var(--color-base);
+}
+
+.simple-action.-light {
+  color: var(--color-base-light);
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
+
+.simple-action.-light:hover {
+  color: var(--color-base)
+}

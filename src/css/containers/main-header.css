@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--gap-small);
+  padding-bottom: var(--gap-small);
+}
+
+.main-header > .main-logo {
+  width: 100px;
+}

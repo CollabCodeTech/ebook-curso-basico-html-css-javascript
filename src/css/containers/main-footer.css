@@ -1,0 +1,11 @@
+.main-footer .media {
+  width: 20px;
+  margin-right: var(--gap-tiny);
+  margin-bottom: var(--gap-small);
+}
+
+.main-footer > .copy-right {
+  border-top: 2px dashed var(--color-second);
+  padding-top: var(--gap-small);
+  padding-bottom: var(--gab-small);
+}

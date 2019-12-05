@@ -1,0 +1,4 @@
+.container {
+  padding-left: var(--gap-medium);
+  padding-right: var(--gap-medium);
+}

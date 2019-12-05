@@ -1,0 +1,25 @@
+.main-container {
+  height: 80vh;
+  background: url(../../img/404.svg) no-repeat center;
+  background-size: 800px;
+}
+
+.main-container.-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container > .main-title {
+  margin-bottom: var(--gap-small);
+}
+
+.main-container > .main-subtitle {
+  margin-bottom: var(--gap-big)
+}
+
+.main-container > .primary-button {
+  margin-bottom: var(--gap-small);
+  width: 300px;
+}

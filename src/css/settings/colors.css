@@ -1,0 +1,8 @@
+:root {
+  --color-base: #333;
+  --color-base-light: rgba(51, 51, 51, 0.4);
+
+  --color-primary: rgb(236, 209, 111);
+
+  --color-second: #FFF;
+}

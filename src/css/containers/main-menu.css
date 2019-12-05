@@ -1,0 +1,3 @@
+.main-menu > .simple-action:not(:last-child) {
+  margin-right: var(--gap-small);
+}
