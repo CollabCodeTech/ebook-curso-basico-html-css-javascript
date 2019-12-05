@@ -1,25 +1,43 @@
 .main-container {
   height: 80vh;
-  background: url(../../img/404.svg) no-repeat center;
-  background-size: 800px;
+  display: none;
 }
 
-.main-container.-center {
+.main-container.-active {
+  display: block;
+}
+
+.main-container.-active.-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.main-container > .main-title {
+.main-container.-error404  {
+  background: url(../../img/404.svg) no-repeat center;
+  background-size: 800px;
+}
+
+.main-container.-error404 > .main-title {
   margin-bottom: var(--gap-small);
 }
 
-.main-container > .main-subtitle {
+.main-container.-error404 > .main-subtitle {
   margin-bottom: var(--gap-big)
 }
 
-.main-container > .primary-button {
+.main-container.-error404 > .primary-button {
   margin-bottom: var(--gap-small);
   width: 300px;
+}
+
+.main-container.-win {
+  background: url(../../img/congrats.svg) no-repeat center 23vh;
+  background-size: 40vw;
+}
+
+.main-container.-win > .main-title {
+  font-size: 5.5em;
+  margin-bottom: var(--gap-medium);
 }
