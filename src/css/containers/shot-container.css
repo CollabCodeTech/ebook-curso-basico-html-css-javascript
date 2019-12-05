@@ -1,0 +1,7 @@
+.shot-container > .shot-player {
+  display: none;
+}
+
+.shot-container.-rockActive > .-rock {
+  display: block;
+}

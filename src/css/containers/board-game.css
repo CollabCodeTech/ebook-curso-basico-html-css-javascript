@@ -1,0 +1,9 @@
+.board-game {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-game > .vs {
+  margin-left: var(--gap-biggest);
+  margin-right: var(--gap-biggest);
+}

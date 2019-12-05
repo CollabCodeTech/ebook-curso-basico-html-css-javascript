@@ -20,10 +20,17 @@
   <link rel="stylesheet" href="/src/css/components/copy-right.css">
   <link rel="stylesheet" href="/src/css/components/main-title.css">
   <link rel="stylesheet" href="/src/css/components/main-subtitle.css">
+  <link rel="stylesheet" href="/src/css/components/name-player.css">
+  <link rel="stylesheet" href="/src/css/components/shot-player.css">
+  <link rel="stylesheet" href="/src/css/components/icon-shot.css">
 
   <link rel="stylesheet" href="/src/css/containers/main-header.css">
   <link rel="stylesheet" href="/src/css/containers/main-menu.css">
   <link rel="stylesheet" href="/src/css/containers/main-container.css">
+  <link rel="stylesheet" href="/src/css/containers/shot-container.css">
+  <link rel="stylesheet" href="/src/css/containers/icon-container.css">
+  <link rel="stylesheet" href="/src/css/containers/player-container.css">
+  <link rel="stylesheet" href="/src/css/containers/board-game.css">
   <link rel="stylesheet" href="/src/css/containers/main-footer.css">
 </head>
 <body>
@@ -38,18 +45,75 @@
     </nav>
   </header>
 
-  <article class="main-container -error404 -center">
+  <section class="main-container -error404 -center">
     <h1 class="main-title">Seems like we were not ready for that click</h1>
     <h2 class="main-subtitle">Well, let’s at least play a game?</h2>
 
     <a href="#" class="primary-button -dark">Play</a>
     <a href="#" class="simple-action -light">Go Home</a>
-  </article>
+  </section>
 
-  <article class="main-container -win -active -center">
+  <section class="main-container -win -center">
     <h1 class="main-title">You Win!</h1>
-    <h1 class="main-title">2 - 1</h1>
-  </article>
+    <h2 class="main-title">2 - 1</h2>
+  </section>
+
+  <section class="main-container -game -center -active">
+    <h1 class="main-title">Round 1</h1>
+    <h2 class="main-title">0 - 0</h2>
+
+    <div class="board-game">
+      <article class="player-container">
+        <h3 class="name-player">You</h3>
+        <ul class="shot-container -rockActive">
+          <li class="shot-player -rock"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
+          <li class="shot-player -scissors"><img class="icon" src="/src/img/scissors.png" alt="Scissors"></li>
+          <li class="shot-player -paper"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+        </ul>
+
+        <nav class="icon-container">
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-rock.svg" alt="Icon rock">
+            <figcaption class="caption">Rock</figcaption>
+          </figure>
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-paper.svg" alt="Icon paper">
+            <figcaption class="caption">Paper</figcaption>
+          </figure>
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-scissors.svg" alt="Icon scissor">
+            <figcaption class="caption">Scissor</figcaption>
+          </figure>
+        </nav>
+      </article>
+
+      <img class="vs" src="/src/img/vs.svg" alt="Versus">
+
+      <article class="player-container -ai">
+        <h3 class="name-player">Clic.ly AI</h3>
+        <ul class="shot-container -rockActive">
+          <li class="shot-player -rock"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
+          <li class="shot-player -scissors"><img class="icon" src="/src/img/scissors.png" alt="Scissors"></li>
+          <li class="shot-player -paper"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+        </ul>
+
+        <nav class="icon-container">
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-rock.svg" alt="Icon rock">
+            <figcaption class="caption">Rock</figcaption>
+          </figure>
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-paper.svg" alt="Icon paper">
+            <figcaption class="caption">Paper</figcaption>
+          </figure>
+          <figure class="icon-shot">
+            <img class="icon" src="/src/img/icon-scissors.svg" alt="Icon scissor">
+            <figcaption class="caption">Scissor</figcaption>
+          </figure>
+        </nav>
+      </article>
+    </div>
+  </section>
  
   <footer class="main-footer container">
     <a href="http://twitter.com/collabcodetech">

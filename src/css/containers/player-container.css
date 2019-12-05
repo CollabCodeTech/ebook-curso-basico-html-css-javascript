@@ -1,0 +1,25 @@
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-container > .name-player {
+  margin-bottom: var(--gap-medium);
+}
+
+.player-container > .shot-container {
+  margin-bottom: var(--gap-small);
+}
+
+.player-container.-ai {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.player-container.-ai > .name-player {
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.player-container.-ai .caption {
+  transform: translateY(calc(100% + var(--gap-smaller))) rotate3d(0, 1, 0, -180deg);
+}

@@ -1,0 +1,7 @@
+.shot-player {
+  width: 160px;
+}
+
+.shot-player > .icon {
+  width: 100%;
+}

@@ -41,3 +41,11 @@
   font-size: 5.5em;
   margin-bottom: var(--gap-medium);
 }
+
+.main-container.-game > .main-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-container.-game > .player-container {
+  margin-top: var(--gap-medium);
+}

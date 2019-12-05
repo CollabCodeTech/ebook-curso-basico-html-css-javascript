@@ -4,8 +4,8 @@
   font-size: 2em;
   background-color: var(--color-second);
   color: var(--color-primary);
-  padding: var(--gap-tiny) var(--gap-small);
-  border-radius: var(--gap-tiny);
+  padding: var(--gap-smaller) var(--gap-small);
+  border-radius: var(--gap-smaller);
   border: 2px solid var(--color-primary);
   text-align: center;
 }

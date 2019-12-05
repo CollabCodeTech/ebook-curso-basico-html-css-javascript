@@ -1,0 +1,7 @@
+.icon-container {
+  display: flex;
+}
+
+.icon-container > .icon-shot:not(:last-child) {
+  margin-right: var(--gap-small);
+}
