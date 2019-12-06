@@ -1,5 +1,10 @@
 .shot-player {
+  display: none;
   width: 160px;
+}
+
+.shot-player.-active {
+  display: block;
 }
 
 .shot-player > .icon {

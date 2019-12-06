@@ -27,7 +27,6 @@
   <link rel="stylesheet" href="/src/css/containers/main-header.css">
   <link rel="stylesheet" href="/src/css/containers/main-menu.css">
   <link rel="stylesheet" href="/src/css/containers/main-container.css">
-  <link rel="stylesheet" href="/src/css/containers/shot-container.css">
   <link rel="stylesheet" href="/src/css/containers/icon-container.css">
   <link rel="stylesheet" href="/src/css/containers/player-container.css">
   <link rel="stylesheet" href="/src/css/containers/board-game.css">
@@ -45,7 +44,7 @@
     </nav>
   </header>
 
-  <section class="main-container -error404 -center  -active">
+  <section class="main-container -error404 -center">
     <h1 class="main-title">Seems like we were not ready for that click</h1>
     <h2 class="main-subtitle">Well, let’s at least play a game?</h2>
 
@@ -53,29 +52,29 @@
     <a href="/src/index.html" class="simple-action -light">Go Home</a>
   </section>
 
-  <section id="game" class="main-container -game -center">
+  <section id="game" class="main-container -game -center -active">
     <h1 class="main-title">Round 1</h1>
     <h2 class="main-title">0 - 0</h2>
 
     <div class="board-game">
-      <article class="player-container">
+      <article class="player-container -person">
         <h3 class="name-player">You</h3>
-        <ul class="shot-container -rockActive">
-          <li class="shot-player -rock"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
-          <li class="shot-player -scissors"><img class="icon" src="/src/img/scissors.png" alt="Scissors"></li>
-          <li class="shot-player -paper"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+        <ul class="shot-container">
+          <li id="person-rock" class="shot-player -active"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
+          <li id="person-scissor" class="shot-player"><img class="icon" src="/src/img/scissor.png" alt="Scissors"></li>
+          <li id="person-paper" class="shot-player"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
         </ul>
 
         <nav class="icon-container">
-          <figure class="icon-shot">
+          <figure class="icon-shot" data-ref="#person-rock">
             <img class="icon" src="/src/img/icon-rock.svg" alt="Icon rock">
             <figcaption class="caption">Rock</figcaption>
           </figure>
-          <figure class="icon-shot">
+          <figure class="icon-shot" data-ref="#person-paper">
             <img class="icon" src="/src/img/icon-paper.svg" alt="Icon paper">
             <figcaption class="caption">Paper</figcaption>
           </figure>
-          <figure class="icon-shot">
+          <figure class="icon-shot" data-ref="#person-scissor">
             <img class="icon" src="/src/img/icon-scissors.svg" alt="Icon scissor">
             <figcaption class="caption">Scissor</figcaption>
           </figure>
@@ -86,26 +85,11 @@
 
       <article class="player-container -ai">
         <h3 class="name-player">Clic.ly AI</h3>
-        <ul class="shot-container -rockActive">
-          <li class="shot-player -rock"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
-          <li class="shot-player -scissors"><img class="icon" src="/src/img/scissors.png" alt="Scissors"></li>
-          <li class="shot-player -paper"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+        <ul class="shot-container">
+          <li class="shot-player -active"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
+          <li class="shot-player"><img class="icon" src="/src/img/scissor.png" alt="Scissors"></li>
+          <li class="shot-player"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
         </ul>
-
-        <nav class="icon-container">
-          <figure class="icon-shot">
-            <img class="icon" src="/src/img/icon-rock.svg" alt="Icon rock">
-            <figcaption class="caption">Rock</figcaption>
-          </figure>
-          <figure class="icon-shot">
-            <img class="icon" src="/src/img/icon-paper.svg" alt="Icon paper">
-            <figcaption class="caption">Paper</figcaption>
-          </figure>
-          <figure class="icon-shot">
-            <img class="icon" src="/src/img/icon-scissors.svg" alt="Icon scissor">
-            <figcaption class="caption">Scissor</figcaption>
-          </figure>
-        </nav>
       </article>
     </div>
   </section>
@@ -129,6 +113,8 @@
     <p class="copy-right">© Business 2019. All rights reserved. Company registered in US No. 123456789.</p>
   </footer>
 
-  <script src="/src/js/section/error404.js"></script>
+  <script src="/src/js/containers/main-container/error404.js"></script>
+  <script src="/src/js/containers/player-container/person.js"></script>
+  <script src="/src/js/containers/player-container/ai.js"></script>
 </body>
 </html>

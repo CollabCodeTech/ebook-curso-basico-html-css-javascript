@@ -1,4 +1,4 @@
-const $error404 = document.querySelector('.-error404');
+const $error404 = document.querySelector('.main-container.-error404');
 const $game = document.querySelector('.-game');
 const $play = $error404.querySelector('.primary-button');
 

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
 }
 
 .player-container > .name-player {
@@ -18,8 +19,4 @@
 
 .player-container.-ai > .name-player {
   transform: rotate3d(0, 1, 0, -180deg);
-}
-
-.player-container.-ai .caption {
-  transform: translateY(calc(100% + var(--gap-smaller))) rotate3d(0, 1, 0, -180deg);
 }
