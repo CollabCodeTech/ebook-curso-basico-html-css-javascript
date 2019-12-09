@@ -10,31 +10,31 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="/src/css/settings/index.css">
-  <link rel="stylesheet" href="/src/css/tools/base.css">
-  <link rel="stylesheet" href="/src/css/generic/reset.css">
-  <link rel="stylesheet" href="/src/css/elements/index.css">
+  <link rel="stylesheet" href="/css/settings/index.css">
+  <link rel="stylesheet" href="/css/tools/base.css">
+  <link rel="stylesheet" href="/css/generic/reset.css">
+  <link rel="stylesheet" href="/css/elements/index.css">
 
-  <link rel="stylesheet" href="/src/css/components/simple-action.css">
-  <link rel="stylesheet" href="/src/css/components/primary-button.css">
-  <link rel="stylesheet" href="/src/css/components/copy-right.css">
-  <link rel="stylesheet" href="/src/css/components/main-title.css">
-  <link rel="stylesheet" href="/src/css/components/main-subtitle.css">
-  <link rel="stylesheet" href="/src/css/components/name-player.css">
-  <link rel="stylesheet" href="/src/css/components/shot-player.css">
-  <link rel="stylesheet" href="/src/css/components/icon-shot.css">
+  <link rel="stylesheet" href="/css/components/simple-action.css">
+  <link rel="stylesheet" href="/css/components/primary-button.css">
+  <link rel="stylesheet" href="/css/components/copy-right.css">
+  <link rel="stylesheet" href="/css/components/main-title.css">
+  <link rel="stylesheet" href="/css/components/main-subtitle.css">
+  <link rel="stylesheet" href="/css/components/name-player.css">
+  <link rel="stylesheet" href="/css/components/shot-player.css">
+  <link rel="stylesheet" href="/css/components/icon-shot.css">
 
-  <link rel="stylesheet" href="/src/css/containers/main-header.css">
-  <link rel="stylesheet" href="/src/css/containers/main-menu.css">
-  <link rel="stylesheet" href="/src/css/containers/main-container.css">
-  <link rel="stylesheet" href="/src/css/containers/icon-container.css">
-  <link rel="stylesheet" href="/src/css/containers/player-container.css">
-  <link rel="stylesheet" href="/src/css/containers/board-game.css">
-  <link rel="stylesheet" href="/src/css/containers/main-footer.css">
+  <link rel="stylesheet" href="/css/containers/main-header.css">
+  <link rel="stylesheet" href="/css/containers/main-menu.css">
+  <link rel="stylesheet" href="/css/containers/main-container.css">
+  <link rel="stylesheet" href="/css/containers/icon-container.css">
+  <link rel="stylesheet" href="/css/containers/player-container.css">
+  <link rel="stylesheet" href="/css/containers/board-game.css">
+  <link rel="stylesheet" href="/css/containers/main-footer.css">
 </head>
 <body>
   <header class="main-header container">
-    <img src="/src/img/logo.svg" alt="Logo's Clic.ly" class="main-logo">
+    <img src="/img/logo.svg" alt="Logo's Clic.ly" class="main-logo">
 
     <nav class="main-menu">
       <a href="" class="simple-action">Home</a>
@@ -49,7 +49,7 @@
     <h2 class="main-subtitle">Well, let’s at least play a game?</h2>
 
     <a href="#game" class="primary-button -dark">Play</a>
-    <a href="/src/index.html" class="simple-action -light">Go Home</a>
+    <a href="/index.html" class="simple-action -light">Go Home</a>
   </section>
 
   <section id="game" class="main-container -game -center">
@@ -60,35 +60,35 @@
       <article class="player-container -person">
         <h3 class="name-player">You</h3>
         <ul class="shot-container">
-          <li id="person-rock" class="shot-player -active"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
-          <li id="person-scissor" class="shot-player"><img class="icon" src="/src/img/scissor.png" alt="Scissors"></li>
-          <li id="person-paper" class="shot-player"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+          <li id="person-rock" class="shot-player -active"><img class="icon" src="/img/rock.png" alt="Rock"></li>
+          <li id="person-scissor" class="shot-player"><img class="icon" src="/img/scissor.png" alt="Scissors"></li>
+          <li id="person-paper" class="shot-player"><img class="icon" src="/img/paper.png" alt="Paper"></li>
         </ul>
 
         <nav class="icon-container">
           <figure class="icon-shot" data-ref="#person-rock">
-            <img class="icon" src="/src/img/icon-rock.svg" alt="Icon rock">
+            <img class="icon" src="/img/icon-rock.svg" alt="Icon rock">
             <figcaption class="caption">Rock</figcaption>
           </figure>
           <figure class="icon-shot" data-ref="#person-paper">
-            <img class="icon" src="/src/img/icon-paper.svg" alt="Icon paper">
+            <img class="icon" src="/img/icon-paper.svg" alt="Icon paper">
             <figcaption class="caption">Paper</figcaption>
           </figure>
           <figure class="icon-shot" data-ref="#person-scissor">
-            <img class="icon" src="/src/img/icon-scissors.svg" alt="Icon scissor">
+            <img class="icon" src="/img/icon-scissors.svg" alt="Icon scissor">
             <figcaption class="caption">Scissor</figcaption>
           </figure>
         </nav>
       </article>
 
-      <img class="vs" src="/src/img/vs.svg" alt="Versus">
+      <img class="vs" src="/img/vs.svg" alt="Versus">
 
       <article class="player-container -ai">
         <h3 class="name-player">Clic.ly AI</h3>
         <ul class="shot-container">
-          <li class="shot-player -active"><img class="icon" src="/src/img/rock.png" alt="Rock"></li>
-          <li class="shot-player"><img class="icon" src="/src/img/scissor.png" alt="Scissors"></li>
-          <li class="shot-player"><img class="icon" src="/src/img/paper.png" alt="Paper"></li>
+          <li class="shot-player -active"><img class="icon" src="/img/rock.png" alt="Rock"></li>
+          <li class="shot-player"><img class="icon" src="/img/scissor.png" alt="Scissors"></li>
+          <li class="shot-player"><img class="icon" src="/img/paper.png" alt="Paper"></li>
         </ul>
       </article>
     </div>
@@ -101,20 +101,20 @@
    
   <footer class="main-footer container">
     <a href="http://twitter.com/collabcodetech">
-      <img class="media" src="/src/img/twitter.svg" alt="Logo da Twitter">
+      <img class="media" src="/img/twitter.svg" alt="Logo da Twitter">
     </a>
     <a href="http://facebook.com/collabcode">
-      <img class="media" src="/src/img/facebook.svg" alt="Logo da Facebook">
+      <img class="media" src="/img/facebook.svg" alt="Logo da Facebook">
     </a>
     <a href="http://instagram.com/collabcode">
-      <img class="media" src="/src/img/instagram.svg" alt="Logo da Instagram">
+      <img class="media" src="/img/instagram.svg" alt="Logo da Instagram">
     </a>
 
     <p class="copy-right">© Business 2019. All rights reserved. Company registered in US No. 123456789.</p>
   </footer>
 
-  <script src="/src/js/containers/main-container/error404.js"></script>
-  <script src="/src/js/containers/player-container/person.js"></script>
+  <script src="/js/containers/main-container/error404.js"></script>
+  <script src="/js/containers/player-container/person.js"></script>
   <script src="/src/js/containers/player-container/ai.js"></script>
 </body>
 </html>
