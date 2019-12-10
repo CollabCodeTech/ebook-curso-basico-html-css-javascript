@@ -11,6 +11,7 @@
     1. Exercício 02 - Crie o HTML do cabeçalho
     1. Exercício 03 - Estruture o HTML
     1. Exercício 04 - Projeto no GitHub
-    1. Revisão
     1. Desafios top top top
     1. O que terá no Dia 2
+
+<div class="page"/>
