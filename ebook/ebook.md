@@ -28,7 +28,7 @@ Quero trocar o conhecimento com você sobre **HTML**, **CSS** e **JavaScrit** pa
 
 ## Onde tirar dúvidas
 
-Todas as suas dúvidas podem ser tiradas nos canais a seguir. Criei um grupo no facebook como uma tentativa de ajudar a galera dos países da África que falam português (Angola, Cabo Verde, Guiné-Bissau, Moçambique, São Tomé e Príncipe e Guiné Equatorial)assim como nós brasileiros e por favor, não envie imagens, vídeos ou links externos porque a galera da África não tem um acesso à internet bom e o que tem é muito caro. É sério! Se alguém está com dúvida no grupo do facebook, por favor responda em texto e direto no facebook, ou simplesmente não responda, deixe para quem tem um bom coração.
+Todas as suas dúvidas podem ser tiradas nos canais a seguir. Criei um grupo no facebook como uma tentativa de ajudar a galera dos países da África que falam português (Angola, Cabo Verde, Guiné-Bissau, Moçambique, São Tomé e Príncipe e Guiné Equatorial) assim como nós brasileiros e por favor, não envie imagens, vídeos ou links externos porque a galera da África não tem um acesso à internet bom e o que tem é muito caro. É sério! Se alguém está com dúvida no grupo do facebook, por favor responda em texto e direto no facebook, ou simplesmente não responda, deixe para quem tem um bom coração.
 
 - [Discord](http://bit.ly/discord-collabcode)
 - [Facebook](http://bit.ly/face-html-css-javascript)
@@ -429,8 +429,10 @@ Se você quiser compartilhar o código do seu projeto com outros desenvolvedores
 2. Criar um repositório do projeto;
 3. Criar e adicionar uma SSH key no GitHub;
 4. Associar projeto local com o remoto do GitHub;
-5. Guardar estado do código e enviar para o GitHub;
-6. Enviar o código para o repositório remoto do GitHub.
+5. Configurar o git localmente;
+6. Adicionar arquivos para serem enviados para o repositório;
+7. Guardar estado do código e enviar para o GitHub;
+8. Enviar o código para o repositório remoto do GitHub.
 
 ### Passo a passo
 #### 1. Crie conta no GitHub
@@ -439,6 +441,12 @@ Entre no site [https://github.com](https://github.com) clique no link *Sign up* 
 ![Link para criar a conta no GitHub](img/signup.png)
 
 Preencha os campos *Username* (nome do usuário), *Email address* (Endereço de email), *Password* (senha), resolva o puzzle (enigma) e por último clique no botão azul com o texto *Next: Select a plan*:
+
+![Tela de cadastro da conta](img/criar-usuario-github.png)
+
+Depois você terá que escolher o plano do GitHub, não é necessário contratar nenhum plano no começo dos estudos, então escolha a opção free.
+
+**Obs.** Se não aparecer a tela dos planos, só clique no logo do GitHub que fica no topo do lado direito para sair da tela que você está, fique tranquilo se entrou nessa tela o próprio GitHub definiu que sua conta é a versão free.
 
 ![Escolhendo plano free do GitHub](img/plano-free.png)
 
@@ -450,8 +458,6 @@ Se tudo der certo você verá a tela de boas-vindas do GitHub:
 No lado direito e no topo da tela de boas-vindas tem um sinal de **mais** (+), clique nele e depois na opção *New repository* (Novo repositório):
 
 ![Caminho para criar um novo repositório no GitHub](img/criar-repositorio.png)
-
-<div class="page"/>
 
 Se você cair na tela a seguir, primeiro precisa confirmar seu email e só depois poderá criar um repositório:
 
@@ -504,13 +510,15 @@ ssh-rsa KSAJDFHAKSJHuHfBaNcSa/zd1OSFAr9OqInetBapQF3oVeInJdpGk/n8zqHHR2HJKYfpxiMK
 XRO8m+KBoEzofl43qOezEi/IbaLSpVAjadic5w8KpZS/Hr4dK+1MXD/AWB1TE67R+sJ+eDk4msAX0yKOfEl2a/BgBMtlG/+hGf6s3DSgsw== marco.bruno.br@gmail.com
 ```
 
+**Importante:** Você deve copiar o conteúdo inteiro que começa com **ssh-rsa** e termina com **seu e-mail**!
+
 Volte nas configurações do GitHub na parte do *SSH Keys* e clique no botão verde que está no lado direito com o texto *New SSH key* (Nova chave SSH):
 
 ![Botão para criar uma nova chave SSH](img/botao-nova-ssh-key.png)
 
 Preencha o *Title* (Título) da sua chave SSH, depois cole-a no campo *Key* (Chave) e para finalizar clique no botão verde com o texto *Add SSH Keys* (Adcionar chave SSH):
 
-![Adcionando uma nova chave SSH no GitHub](img/adicionando-ssh-key.png)
+![Adicionando uma nova chave SSH no GitHub](img/adicionando-ssh-key.png)
 
 Se tudo deu certo, você verá uma tela similar a essa:
 
@@ -518,7 +526,7 @@ Se tudo deu certo, você verá uma tela similar a essa:
 
 #### 4. Associe projeto local com repositório remoto do GitHub
 
-Volte na tela do repósitorio que criamos no começo do exercício, nela terá um botão com o nome de SSH, clique nele depois em um ícone que copiará a URL SSH do repositório: 
+Volte na tela do repositório que criamos no começo do exercício, nela terá um botão com o nome de SSH, clique nele depois em um ícone que copiará a URL SSH do repositório: 
 ![Copiando a url SSH do repositório](img/copie-ssh-do-repositorio.png)
 
 Abra o terminal, dentro da pasta do projeto **jokempo** execute o comando a seguir que associará o nosso projeto local com o repositório remoto do GitHub:
@@ -526,7 +534,55 @@ Abra o terminal, dentro da pasta do projeto **jokempo** execute o comando a segu
 git remote add origin https://github.com/marcobruno-exemplo/jokempo.git
 ```
 
-#### 5. Guarde o estado do código
+#### 5. Configurar o git localmente
+
+Rode os comandos a seguir para configurar o nome (`user.name`) e o e-mail (`user.email`) que devem aparecer toda vez que você for guardar o estado do seu código:
+
+```bash
+git config --global user.name "Seu nome"
+git config --global user.email "seu.email@exemplo.com"
+```
+
+Para ver que tudo foi configurado corretamente, rode o comando abaixo:
+
+```bash
+git config -l
+```
+
+Se tudo ocorreu bem você verá uma saída similar a esta:
+
+```
+user.name=Marco Bruno
+user.email=marco.bruno.br@gmail.com
+```
+
+#### 6. Adicione os arquivos que você alterou
+
+Execute o comando a seguir para adicionar o arquivo que foi alterado na lista de arquivos que devem ser enviados para o repositório remoto do GitHub:
+
+```bash
+git add src/404.html
+```
+
+Para verificar se foi adicionado, rode o comando abaixo:
+
+```bash
+git status
+```
+
+Aparecerá uma saída parecida com esta:
+
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/404.html
+```
+
+#### 7. Guarde o estado do código
 
 Rode o comando a seguir, ele guardará o estado do código como está agora, isso dará a você o poder de máquina do tempo para o seu código:
 ```bash
@@ -535,7 +591,9 @@ git commit -m "Crie o HTML do cabeçalho"
 
 > O comando `commit` com o parâmetro `-m` posibilita você adicionar uma mensagem para esse momento do código, dessa forma se precisar voltar nesse momento do código ficará mais fácil para achar. O texto da mensagem de `commit` sempre fica no imperativo, se possível em inglês mas se você não sabe inglês não se preocupe com isso nesse momento, você está começando a aprender programação, mas o conhecimento de inglês é bem importante uma vez que você quer ser programador. Para saber mais sobre a mensagem de commit, [leia o post do Lucas Caton](https://www.lucascaton.com.br/2017/10/16/como-escrever-mensagens-de-commits-no-git).
 
-#### 6. Envie o código para o repositório remoto do GitHub
+<div class="page"/>
+
+#### 8. Envie o código para o repositório remoto do GitHub
 
 Execute o comando a seguir, ele enviará o código para o repositório remoto que associamos com o comando `git remote add`, anteriormente nesse exercício:
 ```bash
@@ -579,6 +637,4 @@ O desafio intermediário é um pouco mais complicado, mas com o conhecimento que
 ![CSS implementado no cabeçalho](img/cabecalho-com-css.png)
 
 ## O terá no Dia 2
-Além de implementar os desafios top top top colacaremos o site em produção e você poderá mandar para seus amigos e divulgar nas redes sociais o que está aprendendo. Ah! Também vamos implementar o rodapé do nosso layout.
-
-<div class="page"/>
+Além de implementar os desafios top top top, vamos implementar seção principal e ficará faltando apenas o rodapé na página inicial.
