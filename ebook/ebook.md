@@ -963,6 +963,8 @@ Remova o traço que fica na base do texto, usando a propriedade `text-decoration
 }
 ```
 
+<div class="page"/>
+
 Esse é o resultado no navegador:
 
 ![Componente simple-action sem o traço na base do texto](img/2-simpe-action.png)
@@ -1041,8 +1043,6 @@ Abra o arquivo **404.html** e adicione o atributo `class` no quarto link do menu
 Pelo VSCode crie o arquivo **primary-button.css** dentro da pasta **components** que está localizada na pasta **css**.
 
 Abra o arquivo **404.html** e adicione uma tag `<link>` que importará o arquivo que acabamos de criar, essa tag ficará após a tag de importe do componente **simple-action.css**, **dentro do seu `<head>`** você terá o seguinte código:
-
-<div class="page"/>
 
 ```html
 <meta charset="utf-8">
@@ -1255,6 +1255,8 @@ Crie o seletor que pegará apenas o componente `main-logo` quando for um filho d
 }
 ```
 
+<div class="page"/>
+
 Dentro do seletor que acabamos de criar, defina o tamanho de `20px` para o `main-logo` usando a propriedade `main-logo`:
 
 ```css
@@ -1272,6 +1274,8 @@ Dentro do seletor que acabamos de criar, defina o tamanho de `20px` para o `main
 Você terá o seguinte resultado visual no navegador:
 
 ![Componente main-logo com o tamanho de fonte 20px](img/4-main-header.png)
+
+<div class="page"/>
 
 ## Exercício 07 - Container main-menu
 Para finalizar o nosso header, é necessário criar o container `main-menu` que posicionará e definir o tamanho dos items do menu de navegação principal.
@@ -1309,6 +1313,8 @@ Abra o arquivo **404.html** e dentro dele use a tag `<link>` para relacionar o a
 <link rel="stylesheet" href="css/containers/main-menu.css">
 <link rel="stylesheet" href="css/containers/main-header.css">
 ```
+
+<div class="page"/>
 
 #### 2. Crie arquivo gap.css
 Crie um arquivo **gap.css** dentro da pasta **settings**, esse arquivo terá variáveis com os espaços (respiros, termo mais usado pelos designers) entre os elementos do nosso layout.
@@ -1437,6 +1443,8 @@ Adicione a largura de `60px` utilizando a propriedade `width` para o `primary-bu
 }
 ```
 
+<div class="page"/>
+
 O resultado no navegador será esse:
 
 ![Adiconado uma largura de 60px para o primary-button](img/4-main-menu.png)
@@ -1471,6 +1479,8 @@ Use a propriedade `height` para definir a altura de `20px` para o componente `pr
 Vá no seu navegador e você verá isso:
 
 ![Componente primary-button com a altura de 20px](img/6-main-menu.png)
+
+<div class="page"/>
 
 Para o texto do componente `primary-button` também ficar centralizado no eixo vertical deixaremos a altura da linha com a mesma altura da caixa do componente. Use a propriedade `line-height` com o valor de `20px` que é o mesmo valor que definimos na propriedade `height`:
 
