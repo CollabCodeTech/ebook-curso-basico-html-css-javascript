@@ -2,6 +2,7 @@
 
 ### HTML e CSS
 - Dirença entre os seletores de id, class e tag
+- Valor de especificidade dos seletores do CSS
 - O que é e como usar o RSCSS?
 - O que é e como user o ITCSS?
 - Por que a propriedade font-family do CSS tem muitos valores?
@@ -12,6 +13,7 @@
 - Como funciona a propriedade transition do CSS
 - A mágica da propriedade transform do CSS
 - Criei seus próprios atributos `data-atribute`
+- Diferença entre margin e padding
 
 ### JavaScript
 - Variaveis (`const`, `let` e `var`)
