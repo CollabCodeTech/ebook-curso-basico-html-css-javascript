@@ -13,5 +13,15 @@
     1. Exercício 04 - Projeto no GitHub
     1. Desafios top top top
     1. O que terá no Dia 2
+1. Dia 2 - Dando vida ao projeto
+    1. Exercício 01 - Criar HTML da seção
+    1. Exercício 02 - Base do CSS
+    1. Exercício 03 - Primeiro componente
+    1. Exercício 04 - Componente simple-action
+    1. Exercício 05 - Componente primary-button
+    1. Exercício 06 - Primeiro container
+    1. Exercício 07 - Container main-menu
+    1. Desafios top top top
+    1. O que terá no Dia 3
 
 <div class="page"/>

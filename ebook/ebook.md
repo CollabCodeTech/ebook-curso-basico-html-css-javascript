@@ -13,6 +13,16 @@
     1. Exercício 04 - Projeto no GitHub
     1. Desafios top top top
     1. O que terá no Dia 2
+1. Dia 2 - Dando vida ao projeto
+    1. Exercício 01 - Criar HTML da seção
+    1. Exercício 02 - Base do CSS
+    1. Exercício 03 - Primeiro componente
+    1. Exercício 04 - Componente simple-action
+    1. Exercício 05 - Componente primary-button
+    1. Exercício 06 - Primeiro container
+    1. Exercício 07 - Container main-menu
+    1. Desafios top top top
+    1. O que terá no Dia 3
 
 <div class="page"/>
 
@@ -636,5 +646,861 @@ O desafio intermediário é um pouco mais complicado, mas com o conhecimento que
 - Faça o CSS do cabeçalho e também deixe a pagina toda amarela, conforme na imagem a seguir.
 ![CSS implementado no cabeçalho](img/cabecalho-com-css.png)
 
-## O terá no Dia 2
-Além de implementar os desafios top top top, vamos implementar seção principal e ficará faltando apenas o rodapé na página inicial.
+<div class="page"/>
+
+# Dia 2 - Dando vida ao projeto
+
+> *A pressa é a inimiga da vitória. O fraco não tem espaço e o covarde morre sem tentar!*<br>
+> Racionais MC's
+
+## Exercício 01 - Criar HTML da seção
+Aqui é uma ótima oportunidade para você validar seu conhecimento sobre HTML que aprendeu nos exercícios do dia 1. Criaremos o título e subtítulo que fica a seguir do nosso cabeçalho.
+
+### Tarefas
+1. Crie o HTML do título que fica após o cabeçalho
+![Título do 404](img/titulo-404.png)
+2. Crie o HTML do subtítulo após o título que acabamos de criar
+![Subtítulo do 404](img/subtitulo-404.png)
+
+### Passo a passo
+
+#### 1. Crie HTML do título
+Após a tag `<header>` crie uma tag de título de primeira importância (`<h1>`) e dentro dela coloque o conteúdo *Seems like we were not ready for that click* (Parece que não estávamos prontos para esse clique). O código que está **dentro da sua tag `<body>`** ficará da seguinte forma, com a adição do título:
+
+```html
+<header>
+  <h1>Clic.ly</h1>
+
+  <nav>
+    <a href="">Home</a>
+    <a href="">Pricing</a>
+    <a href="">About Us</a>
+    <a href="">Log in</a>
+  </nav>
+</header>
+
+<h1>Seems like we were not ready for that click</h1>
+```
+
+#### 2. Crie HTML do subtitle
+A seguir do título que acabamos de construir, adicione uma tag que represente um título de segunda importância, também conhecido como subtítulo (`<h2>`) e dentro dela coloque este texto: *Well, let’s at least play a game?* (Bem, pelo menos vamos jogar um jogo?).
+Seu código que está dentro do `<body>` ficará da seguinte forma:
+
+```html
+<header>
+  <h1>Clic.ly</h1>
+
+  <nav>
+    <a href="">Home</a>
+    <a href="">Pricing</a>
+    <a href="">About Us</a>
+    <a href="">Log in</a>
+  </nav>
+</header>
+
+<h1>Seems like we were not ready for that click</h1>
+<h2>Well, let’s at least play a game?</h2>
+```
+
+<div class="page"/>
+
+## Exercício 02 - Base do CSS
+Definiremos algumas bases para a parte visual do nosso site com CSS, as cores da nossa aplicação usando variáveis do CSS e utilizaremos uma destas cores aplicando-a no `<body>`.
+
+### Tarefas
+1. Crie uma pasta **css** que ficará dentro da **src**;
+2. Crie uma pasta **settings** que ficará dentro da **css**;
+3. Crie um arquivo **color.css** na pasta **settings** com uma variável chamada `--color-primary` que terá o valor `#ecd16f`, não deixe de importar o arquivo no **404.html**;
+4. Crie uma pasta **elements** dentro da **css**;
+5. Crie um arquivo **base.css** e nele você deve atribuir a cor `--color-primary` como cor de fundo para o body.
+
+### Passo a passo
+
+#### 1. Crie pasta CSS
+No terminal e dentro da pasta do projeto **jokempo**, entre na pasta **src**, usando o comando a seguir:
+
+```bash
+cd src
+```
+
+Crie a pasta **css**:
+
+```bash
+mkdir css
+```
+
+#### 2. Crie pasta settings
+Dentro da pasta **css** e no terminal crie a pasta **settings**:
+
+```bash
+mkdir settings
+```
+
+#### 3. Crie arquivo color.css
+Volte no VSCode e crie um arquivo chamado **color.css** que ficará dentro da pasta **settings** que acabamos de criar. Dentro deste arquivo crie o selector `:root` que representa a aplicação toda, dentro do seletor crie a variável `--color-primary` e atribua o hexadecimal `#ecd16f` que representa a cor amarela do nosso site. O código do arquivo **settings.css** ficará assim:
+
+<div class="page"/>
+
+```css
+:root {
+  --color-primary: #ecd16f;
+}
+```
+
+Entre no arquivo **404.html** e adicione a tag `<link>` para relacioná-la com o arquivo **color.css**, o código **dentro da tag `<head>`**, ficará da seguinte forma:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link rel="stylesheet" href="css/settings/color.css">
+```
+
+> O seletor `:root` é usado para criar recursos que podem ser acessados por qualquer outro seletor da nossa aplicação. Por isso que usamos ele para guardar nossas variáveis de cor, já que ela será usada pela aplicação toda em muitos contextos diferentes.
+
+> Toda variável no CSS parece uma propriedade do CSS, por esse motivo é obrigatório que ela começar com dois hifens (`--`), elas também são chamada de custom properties (propriedades customizadas). Você pode ler mais sobre na MDN (Mozilla developer network): [https://developer.mozilla.org/en-US/docs/Web/CSS/--*](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+
+> Dentro da pasta **settings** ficarão todas as variáveis que disponibilizaremos para nossa aplicação. A estrutura de pasta que estamos usando é muito similar a uma padrão conhecido com o ITCSS (Inverted Triangle CSS). Recomendo você ler o post do Willian Justen para se aprofundar mais nesse tema: [https://willianjusten.com.br/organizando-seu-css-com-itcss/](https://willianjusten.com.br/organizando-seu-css-com-itcss/) 
+
+#### 4. Crie pasta
+Volte ao terminal e crie a pasta **elements** dentro da pasta **css**. Estando dentro da pasta **css** rode o comando a seguir:
+
+```bash
+mkdir elements
+```
+
+#### 5. Crie arquivo base.css
+No VSCode crie um arquivo **base.css** dentro da pasta **elements**, nele crie um seletor de tag para a `body`, no seletor defina a cor de fundo usando a propriedade `background-color` com o valor da variável `--color-primary`. O código do arquivo **base.css**, ficará dessa forma:
+
+```css
+body {
+  background-color: var(--color-primary);
+}
+```
+
+> Para usar um variável do CSS precisamos envolvê-la com `var(--nome-da-variavel)`.
+
+Importe o arquivo **base.css** no arquivo **404.html** usando a tag `<link>` dentro do `<head>` e após o importe do arquivo **color.css**. Seu código dentro da tag `<head>` ficará da seguinte forma:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+```
+
+Se visitar o seu navegador a sua página estará similar a esta:
+![Body com a cor de fundo amarela](img/body-background-color.png)
+
+<div class="page"/>
+
+## Exercício 03 - Primeiro componente
+Não vou te ensinar a criar um CSS complicado de dar manutenção,se você criar um site, sistema ou aplicação que tem um custo alto de manutenção isso te trará muita frustação a curto prazo e poderá fazer com que o seu projeto venha a falhar. Um produto com custo alto se torna menos competivo no mercado de trabalho.
+Então criaremos o nosso primeiro componente e tudo que precisarmos para deixar nosso CSS organizado e de fácil manutenção.
+
+### Tarefas
+1. Crie uma pasta **components** dentro da pasta **css**;
+2. Adicione a `class` `main-logo` no `<h1>` que está dentro da tag `<header>`
+3. Crie um arquivo **main-logo.css** dentro da pasta **components** e faça o CSS para ele ficar da seguinte forma (lembre-se do `<link>` para o arquivo **main-logo.css** no **404.html**):
+![Logo da click.ly](img/logo-clic-ly.png)
+
+### Passo a passo
+
+#### 1. Crie pasta components
+Agora não precisa mais usar o terminal para criar as pastas, acho que já pegou a ideia dele, pode criar a pasta **components** usando o próprio VSCode, essa pasta ficará dentro da pasta **css**.
+
+#### 2. Adicione o main-logo
+Adicone o atributo `class` com o valor `main-logo` na tag `<h1>` que está dentro da tag `<header>` no nosso arquivo **404.html**:
+
+```html
+<h1 class="main-logo">Clic.ly</h1>
+```
+
+#### 3. CSS do componente main-logo
+Dentro do arquivo **color.css** adicione uma nova cor chamada `--color-second` e atribua a ela o valor de `#fff` que é o hexadecimal da cor branca:
+
+<div class="page"/>
+
+```css
+:root {
+  --color-primary: #ecd16f;
+  --color-second: #fff;
+}
+```
+
+Dentro da pasta **components** crie um arquivo **main-logo.css**, nesse arquivo crie um seletor de classe chamado `main-logo`:
+
+```css
+.main-logo {
+  
+}
+```
+
+> Seletores de classes começam com um ponto (`.main-logo`), não esqueça do ponto porque mesmo sem isso ele é um seletor válido para o CSS, só que sem o ponto no começo ele se torna um seletor de tag
+
+Dentro do seletor `.main-logo` adicione a cor branca para o texto usando a propriedade CSS `color` com o valor `var(--color-second)`:
+
+```css
+.main-logo {
+  color: var(--color-second);
+}
+```
+
+Faça o importe do arquivo **main-logo.css** no arquivo **404.html** usando a tag `<link>`, ela ficará depois do relacionamento do arquivo **base.css**. O código que fica **dentro da sua tag `<head>`** ficará assim:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+```
+
+Precisamos importar nossa família de fontes do nosso `.main-logo` que é a *Bitter*, usaremos o *Google Fonts* para baixar esta família no nosso arquivo **404.html**. Para isso também vamos usar uma tag `<link>` mas ela não será direcionada a um arquivo CSS e sim ao link da fonte *Bitter* no *Google Fonts* e a tag `<link>` dela ficará antes do arquivo **color.css** como está demonstrado a seguir:
+
+<div class="page"/>
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+```
+
+> Link para a fonte Bitter no Google Fonts: [https://fonts.google.com/specimen/Bitter](https://fonts.google.com/specimen/Bitter)
+
+Abra o arquivo **main-logo.css**, aplique a fonte *Bitter* no seletor `.main-logo` usando a propriedade `font-family` com o valor `'Bitter', serif`:
+
+```css
+.main-logo {
+  color: var(--color-second);
+  font-family: 'Bitter', serif;
+}
+```
+
+> A propriedade `font-family` aceita mais de um valor de fontes, ela dá prioridade para fontes que estão à direita e caso a fonte não exista ou não funcione por algum motivo ela tenta carregar a próxima fonte. No final é recomendado usar `serif` (qualquer fonte serifada) ou `sans-serif` (qualquer fonte não serifada), caso nenhuma das fontes funcionem, o SO (sistema operacional) recomendará uma fonte para o navegador.
+
+> Nos componentes evitamos usar propriedades que definam altura, largura, espaços (respiros), posicionamento ou tamanho. Algumas propriedades que evitamos nos componentes são: `width`, `height`, `margin`, `padding`, `display`, `position` e `float`. Isso garantirá uma maior flexibilidade do uso dos componentes e portanto uma manutenção mais feliz.
+
+<div class="page"/>
+
+## Exercício 04 - Componente simple-action
+Criaremos o componente dos links que ficam na navegação principal do nosso site. Ele não usa a mesma família de fontes do nosso logo e é uma ótima oportunidade para praticar o conceito de componentes.
+
+### Tarefas
+1. Adicione a classe `simple-action` nos três primeiros itens da navegação principal do site; 
+2. Crie o arquivo **simple-action.css** dentro da pasta **components**;
+3. Implemente o CSS que deixará o componente como na imagem a seguir, dentro do arquivo **simple-action**:
+
+![Layout de como deve ficar o componente simple-action](img/simple-action.png)
+
+### Passo a passo
+
+#### 1. Adicione a classe simple-action
+Dentro do arquivo **404.html** adicione o atributo `class` com o valor `simple-action` nas três primeiras tags `<a>` que estão dentro da tag `<nav>`. O **código da sua `<nav>`** ficará da seguinte forma:
+
+```html
+<nav>
+  <a class="simple-action" href="">Home</a>
+  <a class="simple-action" href="">Pricing</a>
+  <a class="simple-action" href="">About Us</a>
+  <a href="">Log in</a>
+</nav>
+```
+
+#### 2. Crie arquivo simple-action.css
+Dentro da pasta **css**, temos a pasta **components**. Dentro da pasta **components** adicione um novo arquivo **simple-action.css**, faça isso dentro do VSCode.
+
+Abra o arquivo **404.html** e adicione a tag `<link>` que fará o importe do arquivo que acabamos de criar, essa tag ficará depois do importe do componente `main-logo`. O código que fica dentro do seu `<head>` ficará dessa forma:
+
+<div class="page"/>
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+```
+
+#### 3. CSS do simple-action
+Crie o seletor de classes `.simple-action` dentro do arquivo **simple-action.css**:
+
+```css
+.simple-action {
+
+}
+```
+
+Defina a cor branca para o texto do seletor `.simple-action` usando a propriedade `color` passando para ela a variável `--color-second`. O seletor ficará dessa forma:
+
+```css
+.simple-action {
+  color: var(--color-second);
+}
+```
+
+No navegador terá o seguinte resultado:
+
+![Componente simple-action com o texto na cor branca](img/01-simple-action.png)
+
+Remova o traço que fica na base do texto, usando a propriedade `text-decoration` com o valor `none`:
+
+```css
+.simple-action {
+  color: var(--color-second);
+  text-decoration: none;
+}
+```
+
+Esse é o resultado no navegador:
+
+![Componente simple-action sem o traço na base do texto](img/2-simpe-action.png)
+
+Abra o arquivo **404.html** e adicione a tag `<link>` a seguir da tag que realiza o importe da fonte *Bitter*. Essa nova tag importará a familía de fonte *Comfortaa*. O código que está **dentro do seu `<head>`** ficará assim:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+```
+
+Importe realizado, volte ao arquivo **simple-action.css** e aplique a fonte *Comfortaa* usando a propriedade `font-family` com o valor `sans-serif`:
+
+```css
+.simple-action {
+  color: var(--color-second);
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+}
+```
+
+Você terá o seguinte resultado visual no navegador:
+
+![Componente simple-action usando a fonte Comfortaa](img/3-simple-action.png)
+
+Defina a fonte como negrito usando a propriedade `text-weight` com o valor `bold`:
+
+```
+.simple-action {
+  color: var(--color-second);
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+```
+
+O resultado no navegador será esse:
+
+![Componente simple-action com o texto em negrito](img/4-simple-action.png)
+
+<div class="page"/>
+
+## Exercício 05 - Componente primary-button
+O componente primary-button terá um pouco mais de propriedades comparado com os outro dois que acabamos de criar e ele é um tipo de componente usado em muitos contextos dentro de um site afinal botões estão espalhados em sites da internet, não é mesmo!
+
+### Tarefas
+1. Coloque a classe `primary-button` no quarto link da navegação principal do nosso site;
+2. Adicione um arquivo novo na pasta **components** chamado **primary-button.css**;
+3. Construa todo o CSS necessário no arquivo **primary-button.css** para o componente `primary-button` ficar similar a imagem a seguir, lembre-se das regras de um componente:
+
+![Como o componente primary-button deve ficar](img/primary-button.png)
+
+### Passo a passo
+
+#### 1. Adicione classe primary-button
+Abra o arquivo **404.html** e adicione o atributo `class` no quarto link do menu principal com o valor `primary-button`. A sua `<nav>` ficará assim:
+
+```html
+<nav>
+  <a class="simple-action" href="">Home</a>
+  <a class="simple-action" href="">Pricing</a>
+  <a class="simple-action" href="">About Us</a>
+  <a class="primary-button" href="">Log in</a>
+</nav>
+```
+#### 2. Crie o arquivo primary-button.css
+Pelo VSCode crie o arquivo **primary-button.css** dentro da pasta **components** que está localizada na pasta **css**.
+
+Abra o arquivo **404.html** e adicione uma tag `<link>` que importará o arquivo que acabamos de criar, essa tag ficará após a tag de importe do componente **simple-action.css**, **dentro do seu `<head>`** você terá o seguinte código:
+
+<div class="page"/>
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+<link rel="stylesheet" href="css/components/primary-button.css">
+```
+
+#### 3. CSS do primary-button
+Dentro do arquivo **primary-button.css** crie um seletor de classe para o componente `primary-button`:
+
+```css
+.primary-button {
+
+}
+```
+
+Atribua a cor de fundo branca para o componente usando a propriedade `background-color` com o valor `var(--color-second)`:
+
+```css
+.primary-button {
+  background-color: var(--color-second);
+}
+```
+
+Veja no seu navegador:
+
+![Componente primary-button com o fundo na cor branca](img/1-primary-button.png)
+
+Remova o traço sob o texto usando a propriedade `text-decoration` com o valor `none`:
+
+```css
+.primary-button {
+  background-color: var(--color-second);
+  text-decoration: none;
+}
+```
+
+<div class="page"/>
+
+No navegador terá o seguinte resultado:
+
+![Componente primary-button sem o traço sob o texto](img/2-primary-button.png)
+
+Defina a cor de texto para amarelo usando a propriedade `color` com o valor `var(--color-primary)`:
+
+```css
+.primary-button {
+  background-color: var(--color-second);
+  text-decoration: none;
+  color: var(--color-primary);
+}
+```
+
+![Componente primary-button com a cor de texto amarela](img/3-primary-button.png)
+
+Para adicionar bordas arredondadas utilize a propriedade `border-radius` com o valor `4px`:
+
+```css
+.primary-button {
+  background-color: var(--color-second);
+  text-decoration: none;
+  color: var(--color-primary);
+  border-radius: 4px;
+}
+```
+
+![Componente primary-button com as bordas arredondadas](img/4-primary-button.png)
+
+Mude a família de fonte para a Comfortaa usando a propriedade `font-family` com o valor `'Comfortaa', sans-serif;`:
+
+```css
+.primary-button {
+  background-color: var(--color-second);
+  text-decoration: none;
+  color: var(--color-primary);
+  border-radius: 4px;
+  font-family: 'Comfortaa', sans-serif;
+}
+```
+
+![Componente primary-button com a fonte Comfortaa](img/5-primary-button.png)
+
+<div class="page"/>
+
+## Exercício 06 - Primeiro container
+Praticamos bastante o conceito de componentes, agora chegou a hora de estudar o conceito de containers. Nosso primeiro container será aplicado na tag `<header>`, um container tem a responsabilidade de juntar os componentes além de posicionar e definir o tamanho, espaçamentos e posicionamento deles no contexto do container. Bora praticar que ficará mais claro tudo que tentei dizer.
+
+### Tarefas
+- Crie uma pasta **containers** dentro da pasta **css**;
+- Crie um arquivo **main-header.css** dentro da pasta **containers**;
+- Adicione a classe `main-header` para a tag `<header>` que temos dentro do `<body>`;
+- Crie o CSS necessário para deixar todos os componentes e o próprio container dessa forma:
+![Como o container main-header deve ficar](img/header-container.png)
+
+### Passo a passo
+
+#### 1. Crie pasta containers
+Cria a pasta **containers** dentro da pasta **css**.
+
+#### 2. Crie arquivo main-header.css
+Crie o arquivo **main-header.css** dentro da pasta **containers**.
+
+Abra o arquivo **404.html** e adicione a tag `<link>` que irá relacionar com o arquivo **main-header.css**, ela ficará depois de todos os `<link>`s dos componentes:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+<link rel="stylesheet" href="css/components/primary-button.css">
+
+<link rel="stylesheet" href="css/contaienrs/main-header.css">
+```
+
+<div class="page"/>
+
+#### 3. Adicione a classe main-header
+Dentro do arquivo **404.htm** tem uma tag `<header>`, nela adicione a propriedade `class` com o valor `main-header`, sue `<header>` ficará assim:
+
+```html
+<header class="main-header">
+  <h1 class="main-logo">Clic.ly</h1>
+
+  <nav>
+    <a class="simple-action" href="">Home</a>
+    <a class="simple-action" href="">Pricing</a>
+    <a class="simple-action" href="">About Us</a>
+    <a class="primary-button" href="">Log in</a>
+  </nav>
+</header>
+``` 
+
+#### 4. CSS do container
+Crie o seletor de class do container `main-header` dentro do arquivo **main-header.css**:
+
+```css
+.main-header {
+  
+}
+```
+
+Adicione a propriedade `display` com o valor `flex` para deixar o menu ao lado do logo:
+
+```css
+.main-header {
+  display: flex;
+}
+```
+
+No navegador terá um resultado similar: 
+
+![Navegação principal do lado do logo](img/1-header-container.png)
+
+<div class="page"/>
+
+Use a propriedade `align-items` com o valor `center` para alinhar o logo e a navegação ao centro:
+
+```css
+.main-header {
+  display: flex;
+  align-items: center;
+}
+```
+
+Esse é o resultado no navegador:
+
+![Navegação principal e logo alinhados ao centro entre eles](img/2-main-header.png)
+
+Use a propriedade `justify-content` com o valor `space-between` para mover o logo para esquerda e o menu para a direita:
+
+```css
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+```
+
+Resultado no navegador:
+
+![Logo para esquerda e navegação para direita](img/3-main-header.png)
+
+Crie o seletor que pegará apenas o componente `main-logo` quando for um filho direto do container `main-header`, adicione esse seletor após o do `.main-header`:
+
+```css
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header > .main-logo {
+ 
+}
+```
+
+Dentro do seletor que acabamos de criar, defina o tamanho de `20px` para o `main-logo` usando a propriedade `main-logo`:
+
+```css
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header > .main-logo {
+  font-size: 20px;
+}
+```
+
+Você terá o seguinte resultado visual no navegador:
+
+![Componente main-logo com o tamanho de fonte 20px](img/4-main-header.png)
+
+## Exercício 07 - Container main-menu
+Para finalizar o nosso header, é necessário criar o container `main-menu` que posicionará e definir o tamanho dos items do menu de navegação principal.
+
+### Tarefas
+1. Crie o arquivo **main-menu.css** dentro da pasta **containers**;
+2. Crie o arquivo **gap.css** dentro da pasta **settings**;
+3. Defina em variáveis os respiros da nossa aplicação no arquivo **gap.css**;
+4. Adicione a classe `main-menu` na tag `<nav>` que está dentro do `<header>`;
+5. Crie o CSS necessário para deixar o container `main-menu` dessa maneira:
+
+![Como o container main-menu deve ficar](img/main-menu.png)
+
+### Passo a passo
+
+#### 1. Crie arquivo main-menu.css
+Dentro da pasta **containers** crie o arquivo **main-menu.css**.
+
+Abra o arquivo **404.html** e dentro dele use a tag `<link>` para relacionar o arquivo **main-menu.css**, essa tag ficará antes do container **main-header.css**, o código que está **dentro do seu `<head>`** ficará da seguinte forma:
+
+```html
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+<link rel="stylesheet" href="css/components/primary-button.css">
+
+<link rel="stylesheet" href="css/containers/main-menu.css">
+<link rel="stylesheet" href="css/containers/main-header.css">
+```
+
+#### 2. Crie arquivo gap.css
+Crie um arquivo **gap.css** dentro da pasta **settings**, esse arquivo terá variáveis com os espaços (respiros, termo mais usado pelos designers) entre os elementos do nosso layout.
+
+Abra o arquivo **404.html** e adicione a tag `<link>` que importará o arquivo **gap.css**. Ela ficará após o `<link>` do arquivo **color.css** e o conteúdo da sua tag `<head>` ficará assim:
+
+```css
+<meta charset="utf-8">
+<title>Clic.ly - Not found page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/settings/color.css">
+<link rel="stylesheet" href="css/settings/gap.css">
+<link rel="stylesheet" href="css/elements/base.css">
+
+<link rel="stylesheet" href="css/components/main-logo.css">
+<link rel="stylesheet" href="css/components/simple-action.css">
+<link rel="stylesheet" href="css/components/primary-button.css">
+
+<link rel="stylesheet" href="css/containers/main-menu.css">
+<link rel="stylesheet" href="css/containers/main-header.css">
+```
+
+#### 3. Crie variável de respiro
+Dentro do arquivo **gap.css** crie o seletor `:root`:
+
+```css
+:root {
+  
+}
+```
+
+No seletor `:root`, adicione a variável `--gap-small` com o valor de `22px`:
+
+```css
+:root {
+  --gap-small: 22px;
+}
+``` 
+
+#### 4. Adicione classe main-menu
+No arquivo **404.html** adicione o atributo `class` com o valor `main-menu` na tag `<nav>` que está **dentro da tag `<header>`**. Sua tag `<nav>` ficará assim:
+
+```html
+<nav class="main-menu">
+  <a class="simple-action" href="">Home</a>
+  <a class="simple-action" href="">Pricing</a>
+  <a class="simple-action" href="">About Us</a>
+  <a class="primary-button" href="">Log in</a>
+</nav>
+```
+
+#### 5. CSS do container main-menu
+
+Crie o seletor que pegará os filhos diretos do container `main-menu` que têm a classe `simple-action`. Repare que tem que ser apenas os **filhos diretos**, portanto será necessário usar o seletor avançado de filho direto que é representado pelo sinal de maior (`>`):
+
+```css
+.main-menu > .simple-action {
+  
+}
+```
+
+Utilize a propriedade `margin-right` com o valor `var(--gap-small)` dentro do seletor `.main-menu > .simple-action` para adicionar um *gap* (respiro) externo do lado direito de cada um dos componentes:
+
+```css
+.main-menu > .simple-action {
+  margin-right: var(--gap-small);
+}
+```
+
+O resultado no navegador será:
+
+![Os componentes simple-action com respiro externo a direita](img/1-main-menu.png)
+
+Defina o tamanho da fonte como `12px` usando a propriedade `font-size` dentro do seletor `.main-menu > .simple-action`:
+
+```css
+.main-menu > .simple-action {
+  margin-right: var(--gap-small);
+  font-size: 12px;
+}
+```
+
+Você verá o seguinte resultado visual no navegador:
+
+![Adicionado fonte de 12px nos simple-action](img/2-main-menu.png)
+
+Crie um seletor para pegar o filho direito do container `main-menu` que tem a classe `primary-button`, esse seletor ficará após o seletor `.main-menu > .simple-action`:
+
+```css
+.main-menu > .primary-button {
+
+}
+```
+
+Defina a propriedade `display` com o valor `inline-block` para que as propriedades `width` e `height` do elemento funcionem e ele continue ao lado dos demais elementos do container `main-menu`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+}
+```
+
+Coloque a fonte com o tamanho de `12px` utilizando a propriedade `font-size` para o componente `primary-button` que é filho direto do container `main-menu`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+  font-size: 12px;
+}
+```
+
+O resultado no navegador será:
+
+![Componente primary-button com o tamanho de 12px para fonte](img/3-main-menu.png)
+
+Adicione a largura de `60px` utilizando a propriedade `width` para o `primary-button` que está dentro do `main-menu`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+}
+```
+
+O resultado no navegador será esse:
+
+![Adiconado uma largura de 60px para o primary-button](img/4-main-menu.png)
+
+Para centralizar o texto dentro do botão utilizaremos a propriedade `text-align` com o valor `center`, dentro do seletor `.main-menu > .primary-button`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+}
+```
+
+Esse é o resultado no seu navegador:
+
+![Texto centralizado do componente primary-button](img/5-main-menu.png)
+
+Use a propriedade `height` para definir a altura de `20px` para o componente `primary-button` que é filho direto do container `main-menu`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+  height: 20px;
+}
+```
+
+Vá no seu navegador e você verá isso:
+
+![Componente primary-button com a altura de 20px](img/6-main-menu.png)
+
+Para o texto do componente `primary-button` também ficar centralizado no eixo vertical deixaremos a altura da linha com a mesma altura da caixa do componente. Use a propriedade `line-height` com o valor de `20px` que é o mesmo valor que definimos na propriedade `height`:
+
+```css
+.main-menu > .primary-button {
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+```
+
+O layout do container `main-menu` estará assim no seu navegador:
+
+![Texto centralizado no eixo vertical que esta no componente primary-button](img/7-menu-main.png)
+
+<div class="page"/>
+
+## Desafios top top top
+
+### Básico
+Crie todo o HTML que falta para a seção que está após o nosso cabeçalho:
+![Imagem do desafio básico](img/secao-principal.png)
+
+### Intermediário
+Crie todo o CSS necessário para que a seção que vem depois do header fique exatamente como está na imagem do desafio básico. Lembre-se de criar os *components* e *containers* necessários para deixar o nosso código simples e feliz para manutenções futuras. Sistema que é fácil de dar manutenção tem um custo mais baixo e é um produto mais competitivo no mercado de trabalho.
+
+### Avançado
+Remova ao máximo o CSS que o navegador coloca nas tags, cada navegador escolhe um valor diferente para as propriedades e isso fará com que o nosso layout não funcione igual em navegadores diferentes. Essa técnica é chamada de *reset* CSS (recompor o CSS).
+
+<div class="page"/>
