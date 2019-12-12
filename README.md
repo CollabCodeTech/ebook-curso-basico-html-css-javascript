@@ -13,7 +13,9 @@
 - Como funciona a propriedade transition do CSS
 - A mágica da propriedade transform do CSS
 - Criei seus próprios atributos `data-atribute`
+- Diferença de usar propriedades na forma resumida ou na forma especifica (background-color ou background)
 - Diferença entre margin e padding
+- Explicação de como funciona as cores
 
 ### JavaScript
 - Variaveis (`const`, `let` e `var`)
@@ -35,4 +37,5 @@
 ### Conceitos de Design e ferramenta para FrontEnd
 - Diferença entre SVG, png e jpg
 - Conceitos do Figma para Developers FrontEnd
+- O que é o Developer Tools do Firefox e como ele te ajuda
 

@@ -21,5 +21,15 @@
     1. Exercício 06 - Primeiro container
     1. Exercício 07 - Container main-menu
     1. Desafios top top top
+1. Dia 3 - Treinando HTML e CSS
+    1. Exercício 01 - Cross Browser com reset CSS
+    1. Exercício 02 - Arrume container main-header
+    1. Exercício 03 - Finalize HTML da seção
+    1. Exercício 04 - Crie o componente simple-title
+    1. Exercício 05 - Crie o componente simple-subtitle
+    1. Exercício 06 - Primeira variação do componente
+    1. Exercício 07 - Variação do componente simple-action
 
 <div class="page"/>
+
+
