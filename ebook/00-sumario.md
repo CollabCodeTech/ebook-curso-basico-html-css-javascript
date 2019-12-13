@@ -29,6 +29,7 @@
     1. Exercício 05 - Crie o componente simple-subtitle
     1. Exercício 06 - Primeira variação do componente
     1. Exercício 07 - Variação do componente simple-action
+    1. Exercício 08 - Criar container main-stage
 
 <div class="page"/>
 
