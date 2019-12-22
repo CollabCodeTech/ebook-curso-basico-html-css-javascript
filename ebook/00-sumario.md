@@ -30,6 +30,7 @@
     1. Exercício 06 - Primeira variação do componente
     1. Exercício 07 - Variação do componente simple-action
     1. Exercício 08 - Criar container main-stage
+    1. Desafios top top top
 
 <div class="page"/>
 
