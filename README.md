@@ -38,4 +38,5 @@
 - Diferença entre SVG, png e jpg
 - Conceitos do Figma para Developers FrontEnd
 - O que é o Developer Tools do Firefox e como ele te ajuda
+- O que é um componente
 
