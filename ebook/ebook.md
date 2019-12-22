@@ -30,6 +30,7 @@
     1. Exercício 06 - Primeira variação do componente
     1. Exercício 07 - Variação do componente simple-action
     1. Exercício 08 - Criar container main-stage
+    1. Desafios top top top
 
 <div class="page"/>
 
@@ -1285,7 +1286,7 @@ Você terá o seguinte resultado visual no navegador:
 <div class="page"/>
 
 ## Exercício 07 - Container main-menu
-Para finalizar o nosso header, é necessário criar o container `main-menu` que posicionará e definir o tamanho dos items do menu de navegação principal.
+Para finalizar o nosso header, é necessário criar o container `main-menu` que posicionará e definirá o tamanho dos items do menu de navegação principal.
 
 ### Tarefas
 1. Crie o arquivo **main-menu.css** dentro da pasta **containers**;
@@ -1301,7 +1302,7 @@ Para finalizar o nosso header, é necessário criar o container `main-menu` que 
 #### 1. Crie arquivo main-menu.css
 Dentro da pasta **containers** crie o arquivo **main-menu.css**.
 
-Abra o arquivo **404.html** e dentro dele use a tag `<link>` para relacionar o arquivo **main-menu.css**, essa tag ficará antes do container **main-header.css**, o código que está **dentro do seu `<head>`** ficará da seguinte forma:
+Abra o arquivo **404.html** e dentro dele use a tag `<link>` para relacionar o arquivo **main-menu.css**, essa tag ficará antes do container **main-header.css**. O código que está **dentro do seu `<head>`** ficará da seguinte forma:
 
 ```html
 <meta charset="utf-8">
@@ -1454,7 +1455,7 @@ Adicione a largura de `60px` utilizando a propriedade `width` para o `primary-bu
 
 O resultado no navegador será esse:
 
-![Adiconado uma largura de 60px para o primary-button](img/4-main-menu.png)
+![Adicionado uma largura de 60px para o primary-button](img/4-main-menu.png)
 
 Para centralizar o texto dentro do botão utilizaremos a propriedade `text-align` com o valor `center`, dentro do seletor `.main-menu > .primary-button`:
 
@@ -1504,7 +1505,7 @@ Para o texto do componente `primary-button` também ficar centralizado no eixo v
 
 O layout do container `main-menu` estará assim no seu navegador:
 
-![Texto centralizado no eixo vertical que esta no componente primary-button](img/7-menu-main.png)
+![Texto centralizado no eixo vertical que está no componente primary-button](img/7-menu-main.png)
 
 <div class="page"/>
 
@@ -1520,7 +1521,7 @@ Crie todo o CSS necessário para que a seção que vem depois do header fique ex
 ### Avançado
 Remova ao máximo o CSS que o navegador coloca nas tags, cada navegador escolhe um valor diferente para as propriedades e isso fará com que o nosso layout não funcione igual em navegadores diferentes. Essa técnica é chamada de *reset* CSS (recompor o CSS).
 
-<div class="page"/>
+<div class="page"/> 
 
 # Dia 03 - Treinando HTML e CSS
 
@@ -1692,12 +1693,12 @@ O resultado do site no navegador ficará assim:
 <div class="page"/>
 
 ## Exercício 03 - Finalize HTML da seção
-A seguir do nosso cabeçalho temos uma seção, já começamos a implementar o HTML dela, nesse momento está faltando o HTML de um botão e de um link, faremos os dois agora.
+A seguir do nosso cabeçalho temos uma seção, já começamos a implementar o HTML dela e neste momento está faltando o HTML de um botão e de um link, faremos os dois agora.
 
 ### Tarefas
 1. No arquivo **404.html** adicione o HTML do botão;
 2. Adicione o HTML do link;
-3. Use uma tag para envolver todo o conteúdo dessa seção, conforme mostrado na imagem a seguir:
+3. Use uma tag para envolver todo o conteúdo dessa seção conforme mostrado na imagem a seguir:
 
 ![Seção que envolve o conteúdo](img/secao.png)
 
@@ -1727,7 +1728,7 @@ O resultado no navegador será:
 
 ![Seção com o HTML do botão Play](img/1-secao.png)
 
-Após o link que acabamos de inserir colocaremos uma nova tag `<a>` como texto `Go Home`:
+Após o link que acabamos de inserir colocaremos uma nova tag `<a>` com o texto `Go Home`:
 
 ```html
 <header class="main-header">
@@ -1840,7 +1841,7 @@ O resultado visual no navegador será:
 
 ![Componente simple-title com o texto cinza](img/1-simple-title.png)
 
-Utilize a propriedade `font-family` como valor `'Bitter', serif` para alterar a família de fonte do componente:
+Utilize a propriedade `font-family` com o valor `'Bitter', serif` para alterar a família de fonte do componente:
 
 ```css
 .simple-title {
@@ -1969,13 +1970,13 @@ Nós queremos reaproveitar a maior parte dos comportamentos visuais que já exis
 
 ### Tarefas
 1. Adicione a classe `primary-button` na primeira tag `<a>` que está dentro da `<section>`;
-2. Adicione também a classe de variação `-dark` na mesma tag que acabou de adiconar o `primary-button`;
+2. Adicione também a classe de variação `-dark` na mesma tag que acabou de adicionar o `primary-button`;
 3. Crie o CSS da variação `-dark`.
 
 ### Passo a passo
 
 #### 1. Adicione a classe primary-button
-Dentro do arquivo **404.html** tem a tag `<section>` que contém uma `<a>` com o conteúdo *Play* (começar), adicione nela o atributo `class` com o valor `primary-button`. O código da `<section>` e de seus filhos, ficará assim:
+Dentro do arquivo **404.html** tem a tag `<section>` que contém uma tag `<a>` com o conteúdo *Play* (jogar), adicione nela o atributo `class` com o valor `primary-button`. O código da `<section>` e de seus filhos, ficará assim:
 
 ```html
 <section>
@@ -2105,7 +2106,7 @@ Criaremos um variação chamada `-light` para o componente `simple-action`.
 ### Passo a passo
 
 #### 1. Crie a --color-base-light
-Dentro do arquivo **color.css** adicione uma nova variável `--colo-base-light` com o valor `rgba(51, 51, 51, 0.4)`. O código do arquivo ficará assim:
+Dentro do arquivo **color.css** adicione uma nova variável `--color-base-light` com o valor `rgba(51, 51, 51, 0.4)`. O código do arquivo ficará assim:
 
 ```css
 :root {
@@ -2133,7 +2134,7 @@ Esse será o resultado no navegador:
 ![Componente simple-action sendo usado dentro da section](img/1-simple-action-light.png)
 
 #### 3. Adicione a variação -light
-Na mesma tag que acabamos de adicionar a classe `simple-action` adicione também a classe `-light`. O código da `<section>` fica assim:
+Na mesma tag que acabamos de adicionar a classe `simple-action` adicione também a classe `-light`. O código da `<section>` ficará assim:
 
 ```html
 <section>
@@ -2210,7 +2211,7 @@ Criaremos o container responsável por posicionar todos os componentes que estã
 1. Crie a variável `--gap-big` com o valor do espaço entre o `simple-subtitle` e o `primary-button`;
 2. Crie o arquivo **main-stage.css**;
 3. Adicione a classe `main-stage` na `<section>`;
-4. Crie o CSS necessário do container `main-stage` para deixar ele assim:
+4. Crie o CSS necessário do container `main-stage` para deixá-lo assim:
 
 ![Visualmente como o container main-stage tem que ficar](img/main-stage.png)
 
@@ -2290,7 +2291,7 @@ Resultado no navegador:
 
 ![Os componentes do container estão um do lado do outro](img/1-main-stage.png)
 
-Use a propriedade `flex-direction` com o valor `column` para deixar s componentes do nosso container um abaixo do outro:
+Use a propriedade `flex-direction` com o valor `column` para deixar os componentes do nosso container um abaixo do outro:
 
 ```css
 .main-stage {
@@ -2313,7 +2314,7 @@ Centralize todos os componentes do container `main-stage` no sentido horizontal 
 }
 ```
 
-Como está no navegador:
+Como ficará no navegador:
 
 ![Componentes do container centralizado no sentido horizontal](img/3-main-stage.png)
 
@@ -2332,7 +2333,7 @@ Atualize o navegador e você terá uma triste surpresa, nada mudou:
 
 ![Componentes do container centralizado no sentido horizontal](img/3-main-stage.png)
 
-Não tivemos alteração visual, usando a propriedade `justify-content` com o valor `center` porque o container `main-stage` não tem uma altura definida, por tantdo use a propriedade `height` com o valor `80vh`:
+Não tivemos alteração visual, usando a propriedade `justify-content` com o valor `center` porque o container `main-stage` não tem uma altura definida, portanto use a propriedade `height` com o valor `80vh`:
 
 ```css
 .main-stage {
@@ -2344,6 +2345,377 @@ Não tivemos alteração visual, usando a propriedade `justify-content` com o va
 }
 ```
 
-Agora sim eles estão centralizado no sentido vertical:
+Agora sim eles estão centralizados no sentido vertical:
 
 ![Componentes centralizado nos dois sentidos vertical e horizontal](img/4-main-stage.png)
+
+Para adicionar um respiro entre os componentes `.simple-title` e `.simple-subtitle`, primeiro crie o seletor que pegará apenas o componente `.simple-title` que for um filho direto do container `.main-stage`, ele ficará após o seletor do container:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+
+}
+```
+
+Dentro dele use a propriedade `margin-bottom` com o valor `var(--gap-smaller)`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+```
+
+Atualize seu navegador:
+
+![Componente simple-title com margin na parte inferior](img/5-main-stage.png)
+
+Entre os componentes `.simple-subtitle` e `primary-button` tem um respiro de `60px`, crie o seletor para pegar o `.simple-subtitle` que seja filho direto do `.main-stage`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+
+}
+```
+
+Dentro do seletor que acabamos de criar, adicione a propriedade `margin-bottom` com o valor `var(--gap-big )`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+```
+
+No seu navegador terá o seguinte resultado visual:
+
+![Componente simple-subtitle com respiro na parte de baixo](img/6-main-stage.png)
+
+Crie um seletor que pegará o componente `.primary-button` que é filho direto do container `.main-stage`, ele ficará a seguir do componente `.main-stage > .simple-subtitle`: 
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  
+}
+```
+
+Dentro do novo seletor, adicione a largura de `180px` utilizando a propriedade `width`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+}
+```
+
+No navegador terá o seguinte resultado:
+
+![Componente primary-button com a largura de 180px](img/7-main-stage.png)
+
+Use a propriedade `text-align` com o valor `center` para deixar o texto centralizado no sentido horizontal (eixo x):
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+}
+```
+
+Visite o navegador e terá o resultado a seguir:
+
+![Componente primary-button com o texto centralizado](img/8-main-stage.png)
+
+Com a propriedade `height` defina a altura do componente `.primary-button` com o valor de `28px`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+}
+```
+
+No seu navegador você terá o seguinte resultado:
+
+![Componente primary-button com a altura de 28px](img/9-main-stage.png)
+
+Para centralizar o texto do botão `.primary-button` no sentido vertical, utilize a propriedade `line-height` (altura da linha) e defina para ela o mesmo valor da altura (`height`) do componente:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+}
+```
+
+Atualizando o navegador, terá o seguinte resultado:
+
+![Componente primary-button com o a altura da linha de 28px](img/10-main-stage.png)
+
+Essa não é a única forma de centralizar o texto de um botão, você também pode usar a propriedade `padding` ou o famoso Flex Box.
+
+Utilize a propriedade `margin-bottom` com o valor com o valor de `var(--gap-smaller)`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: var(--gap-smaller);
+}
+```
+
+No seu navegador terá o seguinte resultado:
+
+![Componente main-stage com respiro na parte de baixo](img/11-main-stage.png)
+
+Defina o valor de `15px` para o tamanho da fonte utilizando a propriedade `font-size`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: var(--gap-smaller);
+  font-size: 15px;
+}
+```
+
+O resultado no navegador será:
+
+![Componente primary-button com o tamanho da fonte de 15px](img/12-main-stage.png)
+
+Crie um novo seletor que pegue o componente `.simple-action` que seja um filho direto do container `.main-stage`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: var(--gap-smaller);
+  font-size: 15px;
+}
+
+.main-stage > .simple-action {
+
+}
+```
+
+Use a propriedade `font-size` com o valor de `15px` para definir um tamanho de fonte para o componente `.simple-action`:
+
+```css
+.main-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-stage > .simple-title {
+  margin-bottom: var(--gap-smaller);
+}
+
+.main-stage > .simple-subtitle {
+  margin-bottom: var(--gap-big);
+}
+
+.main-stage > .primary-button {
+  width: 180px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: var(--gap-smaller);
+  font-size: 15px;
+}
+
+.main-stage > .simple-action {
+  font-size: 15px;
+}
+```
+
+![Componente simple-action com o tamanho da fonte de 15px](img/13-main-stage.png)
+
+## Desafios top top top
+
+### Básico
+Crie o HTML do rodapé, conforme a imagem a seguir:
+![Exemplo de como deve ficar o rodapé](img/main-footer.png)
+
+### Intermediário
+Crie todo CSS necessário para o rodapé ficar com o resultado visual que está na imagem do desafio **Básico**.
+
+### Avançado
+Colocar o 404 que está atrás do texto
+
+<div class="page"/>
