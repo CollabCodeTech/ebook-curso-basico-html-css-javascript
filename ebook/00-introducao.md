@@ -34,4 +34,11 @@ O layout utilizado nesse projeto não foi criado pela comunidade CollabCode, inf
 
 [https://www.figma.com/file/CywyY7njNGI6SfxbDnBOiW/404_error_page?node-id=0%3A25](https://www.figma.com/file/CywyY7njNGI6SfxbDnBOiW/404_error_page?node-id=0%3A25)
 
+## Gostou, faça uma doação!
+
+Gostou do eBook que a CollabCode criou, você pode tornar mais conteúdos como esse possíveis, ajudando a CollabCode, entre no link a seguir do PicPay e escolha o seu Plano:
+
+[https://picpay.me/marcobrunobr](https://picpay.me/marcobrunobr)
+
 <div class="page"/>
+

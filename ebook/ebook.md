@@ -1,10 +1,11 @@
 # Sumário
 
-1. Introdução
+0. Introdução
     1. Objetivo
     1. Onde tirar dúvidas
     1. Como funciona o livro?
     1. Onde acessar o layout do projeto?
+    1. Gostou, faça uma doação!
 1. Dia 1 - Onde tudo começa
     1. Exercício 00 - Prepare o ambiente
     1. Exercício 01 - Inicie projeto
@@ -12,7 +13,7 @@
     1. Exercício 03 - Estruture o HTML
     1. Exercício 04 - Projeto no GitHub
     1. Desafios top top top
-1. Dia 2 - Dando vida ao projeto
+2. Dia 2 - Dando vida ao projeto
     1. Exercício 01 - Criar HTML da seção
     1. Exercício 02 - Base do CSS
     1. Exercício 03 - Primeiro componente
@@ -21,7 +22,7 @@
     1. Exercício 06 - Primeiro container
     1. Exercício 07 - Container main-menu
     1. Desafios top top top
-1. Dia 3 - Treinando HTML e CSS
+3. Dia 3 - Treinando HTML e CSS
     1. Exercício 01 - Cross Browser com reset CSS
     1. Exercício 02 - Arrume container main-header
     1. Exercício 03 - Finalize HTML da seção
@@ -56,9 +57,10 @@ Todas as suas dúvidas podem ser tiradas nos canais a seguir. Criei um grupo no 
 
 Cada capítulo é um dia de estudo, recomendo você não fazer mais de um capítulo por dia pois é importante deixar a mente respirar para você absorver o conhecimento de forma mais eficiente e feliz.
 Esse livro é totalmente prático, é composto só com exercícios.
-A **primeira parte** do exercício é chamado de **Tarefas**, que é apenas uma descrição do que deve ser feito. Se está assistindo as vídeo aulas ao vivo pela [twitch.tv/marcobrunobr](https://twitch.tv/marcobrunobr), recomendo você tentar fazer o exercício apenas com as informações passadas na **Tarefas**. Se após uns 5 minutos não conseguir executar o exercício ou em algum momento do exercício travar, você poderá consultar a terceira parte do exercício.
-A **segunda parte** é chamada de **Passo a passo**, aqui mostro uma das formas de você chegar no que foi solicitado na **Tarefas**. Se você finalizou o exercício seguindo apenas as instruções da **Tarefas** é provável que seu código estará diferente do apresentado no **Passo a passo** e essa é uma das belezas da programação, não existe um único caminho para solucionar um problema. Seja livre e crítico de forma construtiva com você e todos, não considere que o meu código é melhor que o seu, diferente não é pior.
-No final de toda capítulo tem os Desafios top top top, esses desafios é para você validar como está absorvendo o conhecimento das aulas.
+A **primeira parte** do exercício é chamado de **Tarefas**, que é apenas uma descrição do que deve ser feito. Se está assistindo as vídeo aulas ao vivo pela [twitch.tv/marcobrunobr](https://twitch.tv/marcobrunobr), recomendo você tentar fazer o exercício apenas com as informações passadas na **Tarefas**. Se após uns 5 minutos não conseguir executar o exercício ou em algum momento do exercício travar, você poderá consultar a segunda parte do exercício.
+
+A **segunda parte** é chamada de **Passo a passo**, aqui mostro uma das formas de você chegar no que foi solicitado nas **Tarefas**. Se você finalizou o exercício seguindo apenas as instruções das **Tarefas** é provável que seu código esteja diferente do apresentado no **Passo a passo** e essa é uma das belezas da programação, não existe um único caminho para solucionar um problema. Seja livre e crítico de forma construtiva com você e todos, não considere que o meu código é melhor que o seu, diferente não é pior.
+No final de toda capítulo tem os **Desafios top top top**, esses desafios é para você validar como está absorvendo o conhecimento das aulas.
 
 Pronto! Agora vai para o seu Dia 1 e se ficar com alguma dúvida fique à vontade para entrar no [Discord](http://bit.ly/discord-collabcode), [Facebook](http://bit.ly/face-html-css-javascript) e [Telegram](http://bit.ly/telegram-collabcode).
 
@@ -69,6 +71,12 @@ Pronto! Agora vai para o seu Dia 1 e se ficar com alguma dúvida fique à vontad
 O layout utilizado nesse projeto não foi criado pela comunidade CollabCode, infelizmente não consegui achar o dono dele, caso você consiga por favor não deixe de nos avisar para lhe dar os devidos créditos. Você pode acessar o layout no link a seguir do Figma, é necessário você realizar um cadastro no Figma para ter acesso completo ao layout:
 
 [https://www.figma.com/file/CywyY7njNGI6SfxbDnBOiW/404_error_page?node-id=0%3A25](https://www.figma.com/file/CywyY7njNGI6SfxbDnBOiW/404_error_page?node-id=0%3A25)
+
+## Gostou, faça uma doação!
+
+Gostou do eBook que a CollabCode criou, você pode tornar mais conteúdos como esse possíveis, ajudando a CollabCode, entre no link a seguir do PicPay e escolha o seu Plano:
+
+[PicPay da CollabCode](http://bit.ly/picpay-collabcode)
 
 <div class="page"/>
 
@@ -653,6 +661,12 @@ O desafio intermediário é um pouco mais complicado, mas com o conhecimento que
 É algo que não expliquei na aula e você precisará implementar por conta e também correr atrás do conhecimento. Mas tenha calma se não conseguir executar um dos desafios porque no dia seguinte implementarei todos os desafios.
 - Faça o CSS do cabeçalho e também deixe a pagina toda amarela, conforme na imagem a seguir.
 ![CSS implementado no cabeçalho](img/cabecalho-com-css.png)
+
+## Gostou, faça uma doação!
+
+Gostou do eBook que a CollabCode criou, você pode tornar mais conteúdos como esse possíveis, ajudando a CollabCode, entre no link a seguir do PicPay e escolha o seu Plano:
+
+[PicPay da CollabCode](http://bit.ly/picpay-collabcode)
 
 <div class="page"/>
 
@@ -1521,7 +1535,13 @@ Crie todo o CSS necessário para que a seção que vem depois do header fique ex
 ### Avançado
 Remova ao máximo o CSS que o navegador coloca nas tags, cada navegador escolhe um valor diferente para as propriedades e isso fará com que o nosso layout não funcione igual em navegadores diferentes. Essa técnica é chamada de *reset* CSS (recompor o CSS).
 
-<div class="page"/> 
+## Gostou, faça uma doação!
+
+Gostou do eBook que a CollabCode criou, você pode tornar mais conteúdos como esse possíveis, ajudando a CollabCode, entre no link a seguir do PicPay e escolha o seu Plano:
+
+[PicPay da CollabCode](http://bit.ly/picpay-collabcode)
+
+<div class="page"/>
 
 # Dia 03 - Treinando HTML e CSS
 
@@ -2129,6 +2149,8 @@ Na segunda tag `<a>` que temos dentro da tag `<section>` adicione a o atributo `
 </section>
 ```
 
+<div class="page" />
+
 Esse será o resultado no navegador:
 
 ![Componente simple-action sendo usado dentro da section](img/1-simple-action-light.png)
@@ -2213,12 +2235,14 @@ Criaremos o container responsável por posicionar todos os componentes que estã
 3. Adicione a classe `main-stage` na `<section>`;
 4. Crie o CSS necessário do container `main-stage` para deixá-lo assim:
 
-![Visualmente como o container main-stage tem que ficar](img/main-stage.png)
+![Visualmente como o container main-stage tem que ficar](img/13-main-stage.png)
 
 ### Passo a passo
 
 #### 1. Crie variável --gap-big
 Dentro do arquivo **gap.css** crie uma nova variável `--gap-big` com o valor de `60px`. O código do arquivo ficará assim:
+
+<div class="page" />
 
 ```css
 :root {
@@ -2233,8 +2257,6 @@ Dentro do arquivo **gap.css** crie uma nova variável `--gap-big` com o valor de
 Dento da pasta **containers** crie o arquivo **main-stage.css**.
 
 Abra o arquivo **404.html** e adicione uma nova tag `<link>` que será responsável pelo importe do arquivo **main-stage.css**, essa tag ficará depois da tag `<link>` do container `main-header`. As tags `<link>`s que estão dentro do `<head>` ficarão assim:
-
-<div class="page"/>
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet"> 
@@ -2259,6 +2281,8 @@ Abra o arquivo **404.html** e adicione uma nova tag `<link>` que será responsá
 #### 3. Adicione main-stage
 No **404.html** tem um tag `<section>` atribua para ela o atributo `class` com o valor `main-stage`. O código da `<section>` ficará assim:
 
+<div class="page" />
+
 ```html
 <section class="main-stage">
   <h1 class="simple-title">Seems like we were not ready for that click</h1>
@@ -2278,8 +2302,6 @@ Dentro do arquivo **main-stage.css** crie o seletor da classe `main-stage`. O c�
 ```
 
 Adicione a propriedade `display` com o valor `flex` para trabalharmos com o alinhamento dos componentes que estão dentro do container:
-
-<div class="page"/>
 
 ```css
 .main-stage {
@@ -2367,6 +2389,8 @@ Para adicionar um respiro entre os componentes `.simple-title` e `.simple-subtit
 
 Dentro dele use a propriedade `margin-bottom` com o valor `var(--gap-smaller)`:
 
+<div class="page" />
+
 ```css
 .main-stage {
   display: flex;
@@ -2386,6 +2410,8 @@ Atualize seu navegador:
 ![Componente simple-title com margin na parte inferior](img/5-main-stage.png)
 
 Entre os componentes `.simple-subtitle` e `primary-button` tem um respiro de `60px`, crie o seletor para pegar o `.simple-subtitle` que seja filho direto do `.main-stage`:
+
+<div class="page" />
 
 ```css
 .main-stage {
@@ -2447,7 +2473,11 @@ Crie um seletor que pegará o componente `.primary-button` que é filho direto d
 .main-stage > .simple-subtitle {
   margin-bottom: var(--gap-big);
 }
+```
 
+<div class="page" />
+
+```css
 .main-stage > .primary-button {
   
 }
@@ -2528,7 +2558,11 @@ Com a propriedade `height` defina a altura do componente `.primary-button` com o
 .main-stage > .simple-subtitle {
   margin-bottom: var(--gap-big);
 }
+```
 
+<div class="page" />
+
+```css
 .main-stage > .primary-button {
   width: 180px;
   text-align: center;
@@ -2541,6 +2575,8 @@ No seu navegador você terá o seguinte resultado:
 ![Componente primary-button com a altura de 28px](img/9-main-stage.png)
 
 Para centralizar o texto do botão `.primary-button` no sentido vertical, utilize a propriedade `line-height` (altura da linha) e defina para ela o mesmo valor da altura (`height`) do componente:
+
+<div class="page" />
 
 ```css
 .main-stage {
@@ -2591,7 +2627,11 @@ Utilize a propriedade `margin-bottom` com o valor com o valor de `var(--gap-smal
 .main-stage > .simple-subtitle {
   margin-bottom: var(--gap-big);
 }
+```
 
+<div class="page" />
+
+```css
 .main-stage > .primary-button {
   width: 180px;
   text-align: center;
@@ -2604,6 +2644,8 @@ Utilize a propriedade `margin-bottom` com o valor com o valor de `var(--gap-smal
 No seu navegador terá o seguinte resultado:
 
 ![Componente main-stage com respiro na parte de baixo](img/11-main-stage.png)
+
+<div class="page" />
 
 Defina o valor de `15px` para o tamanho da fonte utilizando a propriedade `font-size`:
 
@@ -2656,7 +2698,11 @@ Crie um novo seletor que pegue o componente `.simple-action` que seja um filho d
 .main-stage > .simple-subtitle {
   margin-bottom: var(--gap-big);
 }
+```
 
+<div class="page" />
+
+```css
 .main-stage > .primary-button {
   width: 180px;
   text-align: center;
@@ -2706,16 +2752,27 @@ Use a propriedade `font-size` com o valor de `15px` para definir um tamanho de f
 
 ![Componente simple-action com o tamanho da fonte de 15px](img/13-main-stage.png)
 
+<div class="page"/>
+
 ## Desafios top top top
 
 ### Básico
 Crie o HTML do rodapé, conforme a imagem a seguir:
+
 ![Exemplo de como deve ficar o rodapé](img/main-footer.png)
 
 ### Intermediário
 Crie todo CSS necessário para o rodapé ficar com o resultado visual que está na imagem do desafio **Básico**.
 
 ### Avançado
-Colocar o 404 que está atrás do texto
+Colocar o 404 que está atrás do conteúdo do container `main-stage`, conforme na imagem a seguir:
+
+![Exemplo de como deve ficar o texto 404](img/main-stage-404.png)
+
+## Gostou, faça uma doação!
+
+Gostou do eBook que a CollabCode criou, você pode tornar mais conteúdos como esse possíveis, ajudando a CollabCode, entre no link a seguir do PicPay e escolha o seu Plano:
+
+[PicPay da CollabCode](http://bit.ly/picpay-collabcode)
 
 <div class="page"/>
