@@ -39,8 +39,6 @@
 
 Salve (um oi, da periferia de São Paulo)! Tudo bom? Prazer, sou Marco Bruno. Esse livro é free (grátis) e você pode piratear ele à vontade, só não tenta ganhar uns trocados (dinheiro) em cima dele, certo?
 
-Esse livro é um apoio para as aulas free e ao vivo do Mini curso de HTML, CSS e JavaScript que fiz nos dias 9, 10, 11, 12 e 13 de Dezembro pela [twitch.tv/marcobrunobr](https://twitch.tv/marcobrunobr).
-
 ## Objetivo
 
 Quero trocar o conhecimento com você sobre **HTML**, **CSS** e **JavaScrit** para você começar seus estudos para o objetivo de ser Developer FrontEnd (pessoa desenvolvedora frontend).
